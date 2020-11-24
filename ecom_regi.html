@@ -1,0 +1,122 @@
+<html>
+
+<head>
+	<title> </title>
+</head>
+<style>
+	body
+	{
+		background-image: ;
+		background-size:100% 100%;
+	}
+	table
+	{
+		border:1px solid black;
+		opacity: 0.9;
+		background-color: #f2f2f2;
+		margin-left: auto;
+		margin-right:auto;
+	}
+
+	tr>td
+	{
+		font-size: 1.2rem;
+	}
+	td
+	{
+		padding: 10px;
+	}
+	input
+	{
+		padding: 10px;
+		font-size: 1.0rem;
+	}
+</style>
+<CENTER>
+	<body>
+	<h1>
+	HEADING
+	</h1>
+	<table border='1'>
+
+	<form name="myForm" method="POST" onsubmit="formValidate()" action="feed.php">
+
+		<tr>
+		<th>First Name</th> <td><input type="text" name="Fname" placeholder="First name" value=""/></td>
+		</tr>
+		
+		<tr>
+		<th>Last Name</th> <td><input type="text" name="Lname" placeholder="Last name" value=""/></td>
+		</tr>
+		
+		<tr>
+		<th>Email</th> <td><input type="email" name="Email" placeholder="xyz@gmail.com" value=""/></td>
+		</tr>
+		
+		<tr>
+		<th>DOB</th> <td><input type="date" name="DOB" value=""/></td>
+		</tr>
+		
+		
+		
+		<tr>
+		<th>Phone No.</th> <td><input type="number" name="Phone" placeholder="10 digit phone no." value=""/></td>
+		</tr>
+		
+		<tr>
+		<th>Address</th><td><input type="text" name="Address"  /></td>
+		</tr>
+		
+		<tr>
+		<th>Pin Code</th><td><input type="number" name="Pin" /></td>
+		</tr>
+		
+		<tr>
+		<th>City</th><td><input type="text" name="City" /></td>
+		</tr>
+		
+		<tr>
+		<td colspan='2'><input type="submit" value="Register"></td>
+		</tr>
+	
+	</form>
+	</table>
+
+	<script type="text/javascript">
+function formValidate(){
+
+// First Name Validation
+var Fname = document.myForm.Fname.value;
+if(Fname == null || Fname == ""){
+    alert("First name field cna't be empty!!");
+    return false;
+}
+
+// Last name validation
+var Lname = document.myForm.Lname.value;
+if(Lname == "null" || Lname == ""){
+    alert("Last name field can't be empty!!");
+	return false;
+} 
+
+
+
+
+//email validation
+var email= document.myForm.Email.value;
+var atposition=email.indexOf("@"); 
+var dotposition=email.lastIndexOf("."); 
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){ 
+alert("Please enter a valid e-mail address"); 
+return false;
+ }
+
+alert("Successfully Submitted"); 
+window.location='ecom_login.html';
+
+}
+</script>
+</body>
+</CENTER>
+</html>
+
