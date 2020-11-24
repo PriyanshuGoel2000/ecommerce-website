@@ -14,6 +14,7 @@ $count=mysqli_num_rows($result);
 if($count>0)
 {
 	echo "Already Registered";
+	echo "Registered";
 }
 else{
 
