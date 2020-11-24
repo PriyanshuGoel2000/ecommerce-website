@@ -14,7 +14,9 @@ $count=mysqli_num_rows($result);
 if($count>0)
 {
 	echo "<br>";
-	echo "Already Registered";
+	<script>
+	alert("Already Registered");
+	</script>
 	header("refresh:3; url = ecom_login.html");
 }
 	
@@ -25,7 +27,9 @@ $sql="INSERT into user_detail(Fname, Lname, Email, DOB, Phone, Address, Pin, Cit
 
 mysqli_query($conn,$sql);
 echo "<br>";
-echo "Registered";
+<script>
+	alert("Registered");
+</script>
 header("refresh:3; url = ecom_login.html");
 }
 /*
