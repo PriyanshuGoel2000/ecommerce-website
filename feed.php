@@ -1,8 +1,10 @@
 <?php
+
 include "conn.php";
 $Fname=$_REQUEST['Fname']." ";
 $Lname=$_REQUEST['Lname']." ";
 $email=$_REQUEST['Email']." ";
+$pass=$_REQUEST['Pass']." ";
 $dob=$_REQUEST['DOB']." ";
 $Phone=$_POST['Phone']." ";
 $Address=$_REQUEST['Address']." ";
@@ -13,6 +15,7 @@ $result=mysqli_query($conn,$query);
 $count=mysqli_num_rows($result);
 if($count>0)
 {
+	
 	echo "<br>";
 	<script>
 	alert("Already Registered");
@@ -22,7 +25,7 @@ if($count>0)
 	
 else{
 
-$sql="INSERT into user_detail(Fname, Lname, Email, DOB, Phone, Address, Pin, City) VALUES('$Fname', '$Lname','$email','$dob','$Phone','$Address', '$Pin', '$City')";
+$sql="INSERT into user_detail(Fname, Lname, Email, Pass, DOB, Phone, Address, Pin, City) VALUES('$Fname', '$Lname','$email','$pass','$dob','$Phone','$Address', '$Pin', '$City')";
 
 
 mysqli_query($conn,$sql);

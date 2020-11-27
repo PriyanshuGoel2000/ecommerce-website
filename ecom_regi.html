@@ -54,6 +54,14 @@
 		</tr>
 		
 		<tr>
+		<th>Password</th> <td><input type="password" name="Pass" placeholder="xyz@gmail.com" value=""/></td>
+		</tr>
+		
+		<tr>
+		<th>Confirm Password</th> <td><input type="password" name="Pass_conf" placeholder="xyz@gmail.com" value=""/></td>
+		</tr>
+		
+		<tr>
 		<th>DOB</th> <td><input type="date" name="DOB" value=""/></td>
 		</tr>
 		
@@ -109,6 +117,13 @@ var dotposition=email.lastIndexOf(".");
 if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){ 
 alert("Please enter a valid e-mail address"); 
 return false;
+ }
+ var pass=document.myForm.Pass.value;
+ var cnf_pass=document.myForm.Pass_conf.value;
+ if(pass != cnf_pass)
+ {
+ alert("Passwords don't match");
+ return false;
  }
 
 //alert("Successfully Submitted"); 
