@@ -7,8 +7,8 @@ include "conn.php";
 </head>
 <body>
 <?php
-$email=$_POST['Email'];
-$pass=$_POST['Pass'];
+$email=$_POST['email'];
+$pass=$_POST['password'];
 $query="select * from user_detail where Email='$email' and Pass='$pass'";
 $result=mysqli_query($conn,$query);
 $count=mysqli_num_rows($result);

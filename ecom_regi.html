@@ -42,70 +42,70 @@
 	<form name="myForm" method="POST" onsubmit="formValidate()" action="feed.php">
 
 		<tr>
-		<th>First Name</th> <td><input type="text" name="Fname" placeholder="First name" value=""/></td>
+		<th>First Name</th> <td><input type="text" name="Fname" placeholder="First name" value="" required /></td>
 		</tr>
 		
 		<tr>
-		<th>Last Name</th> <td><input type="text" name="Lname" placeholder="Last name" value=""/></td>
+		<th>Last Name</th> <td><input type="text" name="Lname" placeholder="Last name" value="" required /></td>
 		</tr>
 		
 		<tr>
-		<th>Email</th> <td><input type="email" name="Email" placeholder="xyz@gmail.com" value=""/></td>
+		<th>Email</th> <td><input type="email" name="Email" placeholder="xyz@gmail.com" value="" required /></td>
 		</tr>
 		
 		<tr>
-		<th>Password</th> <td><input type="password" name="Pass" placeholder="xyz@gmail.com" value=""/></td>
+		<th>Password</th> <td><input type="password" id="password" name="Pass" placeholder="Password" value="" required onkeyup='check();'/></td>
 		</tr>
 		
 		<tr>
-		<th>Confirm Password</th> <td><input type="password" name="Pass_conf" placeholder="xyz@gmail.com" value=""/></td>
+		<th>Confirm Password</th> <td><input type="password" id="confirm_password" name="Pass_conf" placeholder="Password" required value="" onkeyup='check();'/> <div id="message"></div></td>
+		
 		</tr>
 		
 		<tr>
-		<th>DOB</th> <td><input type="date" name="DOB" value=""/></td>
+		<th>DOB</th> <td><input type="date" name="DOB" required value=""/></td>
 		</tr>
 		
 		
 		
 		<tr>
-		<th>Phone No.</th> <td><input type="number" name="Phone" placeholder="10 digit phone no." value=""/></td>
+		<th>Phone No.</th> <td><input type="number" name="Phone" required placeholder="10 digit phone no." value=""/></td>
 		</tr>
 		
 		<tr>
-		<th>Address</th><td><input type="text" name="Address"  /></td>
+		<th>Address</th><td><input type="text" required name="Address"  /></td>
 		</tr>
 		
 		<tr>
-		<th>Pin Code</th><td><input type="number" name="Pin" /></td>
+		<th>Pin Code</th><td><input type="number" required name="Pin" /></td>
 		</tr>
 		
 		<tr>
-		<th>City</th><td><input type="text" name="City" /></td>
+		<th>City</th><td><input type="text" required name="City" /></td>
 		</tr>
 		
 		<tr>
-		<td colspan='2'><input type="submit" value="Register"></td>
+		<td colspan='2'><input type="submit" id="submit" value="Register" disabled /></td>
 		</tr>
 	
 	</form>
 	</table>
 
 	<script type="text/javascript">
-function formValidate(){
-
-// First Name Validation
-var Fname = document.myForm.Fname.value;
-if(Fname == null || Fname == ""){
-    alert("First name field cna't be empty!!");
-    return false;
+	var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Password Matched';
+	document.getElementById('submit').disabled = false;
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Password is not Matching';
+	document.getElementById('submit').disabled = true;
+  }
 }
-
-// Last name validation
-var Lname = document.myForm.Lname.value;
-if(Lname == "null" || Lname == ""){
-    alert("Last name field can't be empty!!");
-	return false;
-} 
+function formValidate(){
+document.getElementById('submit').disabled = true;
 
 
 
@@ -118,18 +118,13 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){
 alert("Please enter a valid e-mail address"); 
 return false;
  }
- var pass=document.myForm.Pass.value;
- var cnf_pass=document.myForm.Pass_conf.value;
- if(pass != cnf_pass)
- {
- alert("Passwords don't match");
- return false;
- }
+ 
 
 //alert("Successfully Submitted"); 
 window.location='ecom_login.html';
-
+document.getElementById('submit').disabled = false;
 }
+
 </script>
 </body>
 </CENTER>
