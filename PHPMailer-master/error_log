@@ -1,0 +1,83 @@
+[19-Aug-2015 23:37:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[19-Aug-2015 23:38:05] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[19-Aug-2015 23:43:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[19-Aug-2015 23:50:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[19-Aug-2015 23:51:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[19-Aug-2015 23:59:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[20-Aug-2015 00:00:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[20-Aug-2015 00:00:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 51
+[20-Aug-2015 00:11:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 52
+[20-Aug-2015 00:11:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:6) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 52
+[20-Aug-2015 00:12:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php:39) in /home/intecons/public_html/financeportal/PHPMailer-master/EmailSender.php on line 46
+[27-Aug-2015 02:50:14] PHP Parse error:  syntax error, unexpected T_STRING in /home/intecons/public_html/financeportal/PHPMailer-master/user_send.php on line 33
+[27-Aug-2015 03:34:21] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/intecons/public_html/financeportal/PHPMailer-master/user_send.php on line 8
+[27-Aug-2015 03:40:38] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/intecons/public_html/financeportal/PHPMailer-master/user_send.php on line 8
+[22-Sep-2015 03:04:13] PHP Parse error:  syntax error, unexpected '}' in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 62
+[22-Sep-2015 03:07:05] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_CATCH in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 56
+[22-Sep-2015 03:14:53] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:15:48] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:16:38] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:17:14] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:18:48] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:19:57] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:20:26] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:20:38] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:21:14] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:22:12] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 11
+[22-Sep-2015 03:27:39] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 12
+[23-Sep-2015 03:51:51] PHP Parse error:  syntax error, unexpected T_CATCH in /home/intecons/public_html/financeportal/new/PHPMailer-master/forgotpassword.php on line 59
+[29-Sep-2015 08:10:40] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 08:14:59] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 08:17:28] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 08:28:50] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:30:16] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:31:48] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:40:22] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:46:39] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:51:19] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:53:59] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:55:46] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[29-Sep-2015 23:57:24] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[30-Sep-2015 00:01:57] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[30-Sep-2015 00:02:48] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 36
+[30-Sep-2015 00:51:21] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 00:57:18] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 01:03:12] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 01:09:56] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 01:10:27] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 01:10:59] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 01:11:17] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Empty query in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 37
+[30-Sep-2015 02:59:41] PHP Parse error:  syntax error, unexpected '}' in /home/intecons/public_html/financeportal/new/PHPMailer-master/EmailSender.php on line 113
+[30-Sep-2015 08:45:31] PHP Parse error:  syntax error, unexpected '}' in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 51
+[30-Sep-2015 08:45:39] PHP Parse error:  syntax error, unexpected '}' in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 51
+[30-Sep-2015 08:47:46] PHP Fatal error:  Call to a member function query() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 43
+[30-Sep-2015 08:52:19] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 43
+[30-Sep-2015 08:52:19] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 44
+[30-Sep-2015 09:02:06] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 09:02:06] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 09:05:01] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 09:05:01] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 09:05:01] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 57
+[30-Sep-2015 23:19:16] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 23:19:16] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 23:19:16] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 57
+[30-Sep-2015 23:24:29] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/intecons/public_html/financeportal/new/connection.php on line 8
+[30-Sep-2015 23:24:29] PHP Fatal error:  Uncaught exception 'Exception' with message 'Access denied for user 'root'@'localhost' (using password: NO)' in /home/intecons/public_html/financeportal/new/connection.php:11
+Stack trace:
+#0 /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php(3): include()
+#1 {main}
+  thrown in /home/intecons/public_html/financeportal/new/connection.php on line 11
+[30-Sep-2015 23:25:49] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 23:25:49] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 23:25:49] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 57
+[30-Sep-2015 23:29:50] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 23:29:50] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 23:29:50] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 57
+[30-Sep-2015 23:31:51] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 46
+[30-Sep-2015 23:31:51] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 47
+[30-Sep-2015 23:31:51] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 58
+[30-Sep-2015 23:39:17] PHP Parse error:  syntax error, unexpected T_IF in /home/intecons/public_html/financeportal/new/connection.php on line 10
+[30-Sep-2015 23:42:44] PHP Fatal error:  Call to a member function query() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
+[30-Sep-2015 23:48:12] PHP Fatal error:  Call to a member function query() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 57
+[01-Oct-2015 01:10:10] PHP Warning:  Missing argument 2 for CreateToken(), called in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 28 and defined in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 39
+[01-Oct-2015 01:10:10] PHP Fatal error:  Call to a member function query() on a non-object in /home/intecons/public_html/financeportal/new/PHPMailer-master/RegisterProcess.php on line 45
