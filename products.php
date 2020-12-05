@@ -6,6 +6,7 @@ if(!isset($_SESSION["Email"]))
 {
 header("refresh:0; url = login.html");
 }
+$result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
 ?>
 <html lang="en">
     <head>
@@ -53,17 +54,32 @@ header("refresh:0; url = login.html");
             <hr>
 
             <div class="row text-center" id="dark">
-                <div class="col-md-3 col-sm-6 home-feature">
-                    <div class="thumbnail">
-                        <img src="img/5.jpg" alt="">
-                        <div class="caption">
-                            <h3>Classical C01</h3>
-                            <p>Price: Rs. 80/ sq. ft. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 home-feature">
+			<?php
+				while ($row = mysqli_fetch_array($result1)) {
+				//  echo "<div id='img_div'>";
+				//	echo "<img src='images/".$row['image']."' >";
+				//	echo "<p>".$row['name']."</p>";
+				//	echo "<p>".$row['tag']."</p>";
+				 // echo "</div>";
+			
+                echo "<div class='col-md-3 col-sm-6 home-feature'>";
+                    echo "<div class='thumbnail'>";
+                        echo "<img src='images/".$row['image']."' alt=''>";
+                        echo "<div class='caption'>";
+                            echo "<h4>".$row['name']." ".$row['tag']."</h4>";
+							//echo "<h4>".$row['name']." ".$row['tag']."</h4>";
+                            echo "<p>Price: Rs. 80/ sq. ft. </p>";
+							echo "<button class='button button1'>Buy Now</button>";
+							echo "&nbsp";
+							echo "<button class='button button1'>Add to Cart</button>";
+                        echo "</div>";
+                   echo " </div>";
+                echo "</div>";
+				echo "<br>";
+				
+				}
+				?>
+                <!--<div class="col-md-3 col-sm-6 home-feature">
                     <div class="thumbnail">
                         <img src="img/2.jpg" alt="">
                         <div class="caption">
@@ -92,16 +108,18 @@ header("refresh:0; url = login.html");
                             <p>Price: Rs. 80/ sq. ft.</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="row text-center" id="Symmetric">
-                <div class="col-md-3 col-sm-6 home-feature">
+                <!--<div class="col-md-3 col-sm-6 home-feature">
                     <div class="thumbnail">
                         <img src="img/9.jpg" alt="">
                         <div class="caption">
                             <h3>Classical Vines C04 </h3>
                             <p>Price: Rs. 80/ sq. ft.</p>
+							<button class="button button1" onclick="document.location=''">Buy Now</button>
+							<button class="buybtn" onclick="document.location='cart.html'">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -134,11 +152,11 @@ header("refresh:0; url = login.html");
                             <p>Price: Rs. 80/ sq. ft.</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="row text-center" id="Classical">
-					<div class="col-md-3 col-sm-6 home-feature">
+					<!--<div class="col-md-3 col-sm-6 home-feature">
 						<div class="thumbnail">
 							<img src="img/8.jpg" alt="">
 							<div class="caption">
@@ -177,10 +195,10 @@ header("refresh:0; url = login.html");
 								<p>Price: Rs. 80/ sq. ft.</p>
 							</div>
 						</div>
-					</div>
+					</div>-->
 
-				</div>
 			</div>
+		</div>
         <footer class="footer-copyright text-center py-3"> 
             <div class="container">
                 <center>
