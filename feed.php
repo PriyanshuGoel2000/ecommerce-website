@@ -20,7 +20,7 @@ if($count>0)
 	alert("Already Registered");
 	</script>
 	<?php
-	header("refresh:2; url = ecom_login.html");
+	header("refresh:2; url = login.html");
 }
 	
 else{
@@ -35,7 +35,7 @@ echo "<br>";
 	alert("Registered Successfully");
 </script>
 <?php
-header("refresh:3; url = ecom_login.html");
+header("refresh:3; url = login.html");
 }
 /*
 $query = "select Email from user_detail where Email='$email'";

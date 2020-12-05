@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <head>
+        <title>Sign UP | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Designing Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		
+        <div class="container signup">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 form">
+                    <h1> Sign up </h1>
+                    <form  name="myForm" method="POST" onsubmit="formValidate()" action="feed.php">
+                        <div class="form-group">
+                                <input class="form-control" placeholder="First Name" type="text" name="Fname" required="true">
+            
+                                <br>
+								
+								<input class="form-control" type="text" name="Lname" placeholder="Last name" value="" required />
+								
+								<br>
+
+                                <input class="form-control" placeholder="Email" type="text" name="Email">
+            
+                                <br>
+
+                                <input class="form-control" placeholder="Password" id="password" type="password" name="Pass" required onkeyup='check();'>
+            
+                                <br>
+								
+								<input class="form-control" placeholder="Confirm Password" id="confirm_password" type="password" name="Pass_conf" required onkeyup='check();'><div id="message"></div>
+            
+                                <br>
+								<p>Date Of Birth</p>
+								<input class="form-control" placeholder="DOB" type="date" name="DOB" required value=""/>
+								
+								<br>
+            
+                                <input class="form-control" placeholder="Contact" type="text" name="Phone" required="true">
+            
+                                <br>
+
+                                <input class="form-control" placeholder="Address" type="text" name="Address" required="true">
+								
+                                <br>
+								
+								<input class="form-control" placeholder="City" type="text" name="City" required="true">
+
+                                <br>
+								
+								<input class="form-control" placeholder="PIN" type="number" required name="Pin" />
+								
+								<br>
+                                
+								
+            
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <center>
+                 <p>Copyright 	&#169; Designing Store. All Rights
+                Reserved | Contact Us: +91 90000 00000. </p>
+                </center>	
+            </div>    
+        </footer>
+		<script type="text/javascript">
+	var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Password Matched';
+	document.getElementById('submit').disabled = false;
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Password is not Matching';
+	document.getElementById('submit').disabled = true;
+  }
+}
+function formValidate(){
+document.getElementById('submit').disabled = true;
+
+
+
+
+//email validation
+var email= document.myForm.Email.value;
+var atposition=email.indexOf("@"); 
+var dotposition=email.lastIndexOf("."); 
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){ 
+alert("Please enter a valid e-mail address"); 
+return false;
+ }
+ 
+
+//alert("Successfully Submitted"); 
+window.location='ecom_login.html';
+document.getElementById('submit').disabled = false;
+}
+
+</script>
+    </body>
+</html>

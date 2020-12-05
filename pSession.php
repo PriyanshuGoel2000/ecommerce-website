@@ -16,7 +16,7 @@ if($count>0){
 $_SESSION["Email"]=$email;
 ?>
 <script>
-window.location='index.html';
+window.location='products.php';
 </script>
 <?php	
 }
@@ -24,7 +24,7 @@ else {
 ?>
 <script>
 alert('Email or password invalid');
-window.location='ecom_login.html';
+window.location='login.html';
 </script>	
 	
 	
