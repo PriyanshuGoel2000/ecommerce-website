@@ -39,21 +39,22 @@
                 <div class="col-xs-4"></div>
                 <div class="col-xs-4 form">
                     <h1 class="password"> Change Password </h1>
-                    <form>
+                    <form action="settings.php" method="POST">
                         <div class="form-group">
                                 <input class="form-control" placeholder="Old Password" type="password" name="oldpassword" required="true">
             
                                 <br>
 
-                                <input class="form-control" placeholder="New Password" type="password" name="newpassword">
+                                <input class="form-control" placeholder="New Password" type="password" name="newpassword" id="newpassword" onkeyup='check();'>
             
                                 <br>
             
-                                <input class="form-control" placeholder="Re-type New Password" type="password" name="retypenewpassword" required="true">
+                                <input class="form-control" placeholder="Re-type New Password" type="password" name="retypenewpassword" id="retypenewpassword" required="true" onkeyup='check();'>
+								<div id="message"></div>
 
                                 <br>
             
-                    <button class="btn btn-primary" type="submit">Change</button>
+                    <button class="btn btn-primary" type="submit" id="submit" >Change</button>
                         </div>
                     </form>
                 </div>
@@ -67,5 +68,22 @@
                 </center>	
             </div>    
         </footer>
+		<script type="text/javascript">
+			var check = function() {
+			
+			  if (document.getElementById('newpassword').value ==
+				document.getElementById('retypenewpassword').value) {
+				document.getElementById('message').style.color = 'green';
+				document.getElementById('message').innerHTML = 'Password Matched';
+				document.getElementById('submit').disabled = false;
+				
+			  } else {
+				document.getElementById('message').style.color = 'red';
+				document.getElementById('message').innerHTML = 'Password is not Matching';
+				document.getElementById('submit').disabled = true;
+				
+			  }
+			}
+		</script>
     </body>
 </html>

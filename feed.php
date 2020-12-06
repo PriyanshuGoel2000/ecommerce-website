@@ -25,7 +25,7 @@ if($count>0)
 	
 else{
 
-echo $sql="INSERT into user_detail(FName, LName, Email, Pass, DOB, Phone, Address, City, Pin) VALUES('$Fname', '$Lname','$email','$pass','$dob','$Phone','$Address', '$Pin', '$City')";
+echo $sql="INSERT into user_detail(FName, LName, Email, Pass, DOB, Phone, Address, City, Pin) VALUES('$Fname', '$Lname','$email','$pass','$dob','$Phone','$Address', '$City','$Pin')";
 
 
 mysqli_query($conn,$sql);
