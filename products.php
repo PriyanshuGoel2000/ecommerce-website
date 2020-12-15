@@ -36,7 +36,7 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                         <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
                         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
                     </ul>
@@ -65,13 +65,16 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
                 echo "<div class='col-md-3 col-sm-6 home-feature'>";
                     echo "<div class='thumbnail'>";
                         echo "<img src='images/".$row['image']."' alt=''>";
-                        echo "<div class='caption'>";
+                        echo "<div class='caption' name='tag' value='$row['tag']'>";
                             echo "<h4>".$row['name']." ".$row['tag']."</h4>";
 							//echo "<h4>".$row['name']." ".$row['tag']."</h4>";
                             echo "<p>Price: Rs. 80/ sq. ft. </p>";
-							echo "<button class='button button1'>Buy Now</button>";
+							
+							echo "<button class='button button1'><a href="feed_cart.php" target="_blank">Buy Now</a></button>";
+							header("refresh:3; url = products.php");
 							echo "&nbsp";
-							echo "<button class='button button1'>Add to Cart</button>";
+							echo "<button class='button button1'><a href="feed_cart.php" target="_blank">Add To Cart</a></button>";
+							header("refresh:3; url = cart.php");
                         echo "</div>";
                    echo " </div>";
                 echo "</div>";
