@@ -36,7 +36,7 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="cart1.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                         <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
                         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
                     </ul>
@@ -66,12 +66,16 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
                     echo "<div class='thumbnail'>";
                         echo "<img src='images/".$row['image']."' alt=''>";
                         echo "<div class='caption'>";
-                            echo "<h4>".$row['name']." ".$row['tag']."</h4>";
+                            echo "<h4 name='name' value=".$row['tag'].">".$row['name']." ".$row['tag']."</h4>";
 							//echo "<h4>".$row['name']." ".$row['tag']."</h4>";
-                            echo "<p>Price: Rs. 80/ sq. ft. </p>";
-							echo "<button class='button button1'>Buy Now</button>";
+                            echo "<p name='price' value=".$row['Price'].">Price: Rs.".$row['Price']."/ sq. ft. </p>";
+							echo "<button class='btn btn-primary' type='submit'><a href='TxnTest.php?amt=".$row['Price']."&user=".$_SESSION['Email']." ' target='_blank'>Buy Now</a></button>";
 							echo "&nbsp";
-							echo "<button class='button button1'>Add to Cart</button>";
+							echo "<br>";
+							echo"<form action='feed_cart.php?tag=".$row['tag']."&image=".$row['image']."&price=".$row['Price']."&user=".$_SESSION['Email']."' method='post'>";
+							echo "<br>";
+							echo "<button class='btn btn-primary' type='submit'><a href='feed_cart.php'>Add To Cart</a></button>";
+							echo "</form>";
                         echo "</div>";
                    echo " </div>";
                 echo "</div>";
