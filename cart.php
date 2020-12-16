@@ -34,10 +34,31 @@ include "conn.php";
 		  
 		  <?php
 		  $total=0;
-		  $query="SELECT COUNT(*) FROM cart";
+		  $query="SELECT * FROM cart";
 		  $result=mysqli_query($conn,$query);
 		  $count=mysqli_num_rows($result);
-		  for ($x = 1; $x <= $count ; $x++){
+		  while ($row = mysqli_fetch_array($result)) {
+			//  $img="SELECT image FROM cart WHERE serial='$x'";
+		  //$resimage = $row['image'];
+          $res_img = $row['image'];//$resimage->fetch_array()[0] ?? '';
+		  //$name="SELECT name FROM cart WHERE serial='$x'";
+		  //$resname = mysqli_query($conn, $name);
+          $res_name =$row['name']; //$resimage->fetch_array()[0] ?? '';
+		   
+		  //$price="SELECT price FROM cart WHERE serial='$x'";
+		  //$resprice = mysqli_query($conn, $price);
+          $res_price = $row['price'];//$resimage->fetch_array()[0] ?? '';
+				 echo "<tr class='productitm'>";
+             //<!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+			 echo " <td> $res_img</td>";
+             echo "<td><input type='number' name='qty' value='1' min='0' max='99' class='qtyinput'></td>";
+             echo "<td>$res_name </td>";
+             echo "<td>Rs.$res_price</td>";
+             echo "<td><span class='remove'><img src='images/trash.png' alt='X'></span></td>";
+          echo " </tr>";
+				
+				}
+		 /* for ($x = 1; $x <= $count ; $x++){
 		  $img="SELECT image FROM cart WHERE serial='$x'";
 		  $resimage = mysqli_query($conn, $img);
           $res_img = $resimage->fetch_array()[0] ?? '';
@@ -48,19 +69,19 @@ include "conn.php";
 		  $price="SELECT price FROM cart WHERE serial='$x'";
 		  $resprice = mysqli_query($conn, $price);
           $res_price = $resimage->fetch_array()[0] ?? '';
-		  
+		  */
 		  ?>
           <tr class="productitm">
             <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td><?php echo "$res_img" ?></td>
+            <td><?php echo /*"$res_img"*/ "image" ?></td>
             <td><input type="number" name="qty" value="1" min="0" max="99" class="qtyinput"></td>
-            <td><?php echo $res_name ?></td>
-            <td><?php echo "Rs.$res_price" ?></td>
+            <td><?php echo "design"/*$res_name*/ ?></td>
+            <td><?php echo /*"Rs.$res_price"*/ 100?></td>
             <td><span class="remove"><img src="images/trash.png" alt="X"></span></td>
           </tr>
 		  <?php
 		  
-		  }
+		  //}
 		  ?>
           
           
