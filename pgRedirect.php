@@ -23,11 +23,11 @@ $paramList["INDUSTRY_TYPE_ID"] = $INDUSTRY_TYPE_ID;
 $paramList["CHANNEL_ID"] = $CHANNEL_ID;
 $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
-<<<<<<< HEAD
-$paramList["CALLBACK_URL"] = "http://127.0.0.1/php/paytm/pgResponse.php";
-=======
+/*< HEAD
 $paramList["CALLBACK_URL"] = "http://localhost/Priyanshu/website/pgResponse.php";
->>>>>>> cf81428792674367ae5163d40a79513f87e7ec54
+=======*/
+$paramList["CALLBACK_URL"] = "http://localhost/Priyanshu/website/pgResponse.php";
+
 
 /*
 $paramList["CALLBACK_URL"] = "http://localhost/PaytmKit/pgResponse.php";
