@@ -69,6 +69,14 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
                             echo "<h4 name='name' value=".$row['tag'].">".$row['name']." ".$row['tag']."</h4>";
 							//echo "<h4>".$row['name']." ".$row['tag']."</h4>";
                             echo "<p name='price' value=".$row['Price'].">Price: Rs.".$row['Price']."/ sq. ft. </p>";
+							/*echo "Height: <input type='number' id='height' name='height' value='8' min='4' max='8' class='qtyinput' >ft.";
+							echo "&nbsp";
+							echo "<br>";
+							echo "<br>";
+							echo "Width: <input type='number' id='width' name='width' value='4' min='2' max='4' class='qtyinput' >ft.";
+							echo "&nbsp";
+							echo "<br>";
+							echo "<br>";*/
 							echo "<button class='btn btn-primary' type='submit'><a href='TxnTest.php?amt=".$row['Price']."&user=".$_SESSION['Email']." ' target='_blank'>Buy Now</a></button>";
 							echo "&nbsp";
 							echo "<br>";

@@ -26,6 +26,19 @@ $count=mysqli_num_rows($result);
         <!--Latest compiled and minified JavaScript--> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+		<style>
+		/* Chrome, Safari, Edge, Opera */
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+		  -webkit-appearance: none;
+		  margin: 0;
+		}
+
+		/* Firefox */
+		input[type=number] {
+		  -moz-appearance: textfield;
+		}
+		</style>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -80,14 +93,16 @@ $count=mysqli_num_rows($result);
 									 echo " <td><img src='images/".$res_img."' alt='' width='100' height='120'></td>";
 									 echo "<td>$res_name </td>";
 									 echo "<td colspan='2'> <button class='btn btn-primary' type='submit'><a href='update_cart.php?qty=-1&tag=".$res_name."&user=".$_SESSION['Email']."'>-</a></button>
-									 <input type='number' id='qty' name='qty' value='$res_qty' min='1' max='99' class='qtyinput' >
+									&nbsp
+									 <b>$res_qty</b>
+									 &nbsp
 									 <button class='btn btn-primary' type='submit'><a href='update_cart.php?qty=1&tag=".$res_name."&user=".$_SESSION['Email']."'>+</a></button>
 									 </td>";
 									 echo "<td>₹ $res_price</td>";
 									 echo "<td>₹ $res_total</td>";
 									 echo "<td><span class='remove'><a href='delete_cart.php?name=".$res_name."'><img src='images/trash.png' alt='X'></a></span></td>";
 								  echo " </tr>";
-								  //echo $qty=(int)("document.getElementById('qty').value")+1;
+								  //echo $qty=(int)("document.getElementById('qty').value")+1;<input type='number' id='qty' name='qty' value='$res_qty' min='1' max='99' class='qtyinput' >
 										 $total=$total+$res_total;
 										}
 										?>
