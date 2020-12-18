@@ -72,7 +72,7 @@ $result1 = mysqli_query($conn, "SELECT * FROM product_detail ");
 							echo "<button class='btn btn-primary' type='submit'><a href='TxnTest.php?amt=".$row['Price']."&user=".$_SESSION['Email']." ' target='_blank'>Buy Now</a></button>";
 							echo "&nbsp";
 							echo "<br>";
-							echo"<form action='feed_cart.php?tag=".$row['tag']."&image=".$row['image']."&price=".$row['Price']."&user=".$_SESSION['Email']."' method='post'>";
+							echo"<form action='feed_cart.php?tag=".$row['tag']."&image=".$row['image']."&price=".$row['Price']."&user=".$_SESSION['Email']."&qty=1' method='post'>";
 							echo "<br>";
 							echo "<button class='btn btn-primary' type='submit'><a href='feed_cart.php'>Add To Cart</a></button>";
 							echo "</form>";

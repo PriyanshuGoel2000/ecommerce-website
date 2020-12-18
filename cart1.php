@@ -7,6 +7,10 @@ if(!isset($_SESSION["Email"]))
 header("refresh:0; url = login.html");
 }
 $user=$_SESSION["Email"];
+$total=0;
+$query="SELECT * FROM cart where user='$user'";
+$result=mysqli_query($conn,$query);
+$count=mysqli_num_rows($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +40,7 @@ $user=$_SESSION["Email"];
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="cart1.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                         <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
                         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
                     </ul>
@@ -49,17 +53,15 @@ $user=$_SESSION["Email"];
                     <table class="table table-hover table-striped">
                             <tbody>
                                 <tr>
-								<th>Item </th>
-                                    <th>Item Qty.</th>
-                                    <th>Item Name</th>
+									<th>Item </th>
+									<th>Item Name</th>
+                                    <th colspan='2'>Item Qty.</th>
                                     <th>Price</th>
+									<th>Total Price</th>
                                     <th></th>
                                 </tr>
 								<?php
-								  $total=0;
-								  $query="SELECT * FROM cart where user='$user'";
-								  $result=mysqli_query($conn,$query);
-								  $count=mysqli_num_rows($result);
+								  
 								  while ($row = mysqli_fetch_array($result)) {
 									//  $img="SELECT image FROM cart WHERE serial='$x'";
 								  //$resimage = $row['image'];
@@ -71,23 +73,38 @@ $user=$_SESSION["Email"];
 								  //$price="SELECT price FROM cart WHERE serial='$x'";
 								  //$resprice = mysqli_query($conn, $price);
 								  $res_price = $row['price'];//$resimage->fetch_array()[0] ?? '';
+								  $res_total=$res_price*$res_qty;
 								  //$total=$total+$res_price;
 										 echo "<tr class='productitm'>";
 									 //<!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-									 echo " <td> $res_img</td>";
-									 echo "<td><input type='number' id='qty' name='qty' value='$res_qty' min='1' max='99' class='qtyinput' ></td>";
+									 echo " <td><img src='images/".$res_img."' alt='' width='100' height='120'></td>";
 									 echo "<td>$res_name </td>";
-									 echo "<td>Rs.$res_price</td>";
+									 echo "<td colspan='2'> <button class='btn btn-primary' type='submit'><a href='update_cart.php?qty=-1&tag=".$res_name."&user=".$_SESSION['Email']."'>-</a></button>
+									 <input type='number' id='qty' name='qty' value='$res_qty' min='1' max='99' class='qtyinput' >
+									 <button class='btn btn-primary' type='submit'><a href='update_cart.php?qty=1&tag=".$res_name."&user=".$_SESSION['Email']."'>+</a></button>
+									 </td>";
+									 echo "<td>₹ $res_price</td>";
+									 echo "<td>₹ $res_total</td>";
 									 echo "<td><span class='remove'><a href='delete_cart.php?name=".$res_name."'><img src='images/trash.png' alt='X'></a></span></td>";
 								  echo " </tr>";
 								  //echo $qty=(int)("document.getElementById('qty').value")+1;
-										 $total=$total+$res_price;
+										 $total=$total+$res_total;
 										}
 										?>
+										<script>
+									document.getElementById("qty").onchange = function() {myFunction()};
+
+									function myFunction() {
+									  var x = document.getElementById("qty");
+									  window.location = "update_cart.php?qty=x&tag=".$res_name."&user=".$_SESSION['Email']."";
+									}
+									</script>
                                 <tr>
                                     <th></th>
+									<th></th>
+									
                                     <th>Total</th>
-                                    <th>Rs.<?php echo $total?></th>
+                                    <th>₹ <?php echo $total?></th>
                                     <th><button class="btn btn-primary" type="submit"><a href="TxnTest.php?amt=<?php echo $total?>&user=<?php echo $_SESSION["Email"];?>" target="_blank">Confirm Order</a></button></th>
                                 </tr>
                             </tbody>
