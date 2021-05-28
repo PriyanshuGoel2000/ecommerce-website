@@ -7,7 +7,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Technologies Used
 
 Basic Web Development Programming languages are used in this project.
-```markdown
 **Front-end**:
 - HTML
 - CSS
@@ -34,7 +33,6 @@ Basic Web Development Programming languages are used in this project.
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
