@@ -1,6 +1,6 @@
 ## An E-Commerce Website for an Interior Designing Store.
 
-It is a Web based project of an E-Commerece website for an Interior Designing Store made by [Priyanshu Goel](https://github.com/PriyanshuGoel2000/) and [Shekhar Pandey](https://github.com/Shekharme88).
+A Web based project of an E-Commerece website for an Interior Designing Store made by [Priyanshu Goel](https://github.com/PriyanshuGoel2000/) and [Shekhar Pandey](https://github.com/Shekharme88).
 
 
 The Website consists of basic modules such as Login, new Registration, Home page, Buyable Products, Buying Options, Payment Gateway for completing the payment, Change Password and Cart to add and remove products.
