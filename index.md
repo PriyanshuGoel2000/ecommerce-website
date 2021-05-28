@@ -1,8 +1,11 @@
 ## An E-Commerce Website for an Interior Designing Store.
 
 It is a Web based project of an E-Commerece website for an Interior Designing Store made by [Priyanshu Goel](https://github.com/PriyanshuGoel2000/) and [Shekhar Pandey](https://github.com/Shekharme88).
+
+
 The Website consists of basic modules such as Login, new Registration, Home page, Buyable Products, Buying Options, Payment Gateway for completing the payment, Change Password and Cart to add and remove products.
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+
 
 ### Technologies Used
 
@@ -18,7 +21,14 @@ Basic Web Development Programming languages are used in this project.
 - JavaScript
 
 ### SnapShots
-1. ![Landing Page](https://github.com/PriyanshuGoel2000/priyanshugoel2000.github.io/blob/master/images/ecomm.png)
+1. Landing Page
+![Landing Page](https://github.com/PriyanshuGoel2000/priyanshugoel2000.github.io/blob/master/images/ecomm.png)
+2. Login Page ![Login Page](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/login.png)
+3. Signup Page![Signup Page](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/signup.png)
+4. Home Page ![Home Page](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/homepage.png)
+5. Cart ![Cart](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/cart.png)
+6. Change Password Page ![Change Password](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/changePass.png)
+7. Checkout Page![Checkout Page](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/checkout.png) ![Checkout Page](https://github.com/PriyanshuGoel2000/ecommerce-website/blob/main/SnapShots/checkout1.png)
 
 # Header 1
 ## Header 2
