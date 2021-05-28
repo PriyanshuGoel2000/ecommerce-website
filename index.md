@@ -1,15 +1,25 @@
 ## An E-Commerce Website for an Interior Designing Store.
 
-You can use the [editor on GitHub](https://github.com/PriyanshuGoel2000/ecommerce-website/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
+It is a Web based project of an E-Commerece website for an Interior Designing Store made by [Priyanshu Goel](https://github.com/PriyanshuGoel2000/) and [Shekhar Pandey](https://github.com/Shekharme88).
+The Website consists of basic modules such as Login, new Registration, Home page, Buyable Products, Buying Options, Payment Gateway for completing the payment, Change Password and Cart to add and remove products.
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Technologies Used
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+Basic Web Development Programming languages are used in this project.
 ```markdown
-Syntax highlighted code block
+**Front-end**:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+**Back-end**:
+- PHP
+- JavaScript
+
+### SnapShots
+1. ![Landing Page](https://github.com/PriyanshuGoel2000/priyanshugoel2000.github.io/blob/master/images/ecomm.png)
 
 # Header 1
 ## Header 2
