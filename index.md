@@ -26,7 +26,7 @@ Basic Web Development Programming languages are used in this project.
 
 
 
-[View Website](http://e-commercetest.epizy.com/) Test Credentials UserName:test@gmail.com Password: asd
+[View Website](http://e-commercetests.epizy.com/) Test Credentials UserName:test@gmail.com Password: asd
 ### SnapShots
 1. Landing Page
 ![Landing Page](https://github.com/PriyanshuGoel2000/priyanshugoel2000.github.io/blob/master/images/ecomm.png)
